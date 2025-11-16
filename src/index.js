@@ -50,6 +50,11 @@ export default {
 		TikId - 13124-15/25
 		Tik_Type - בש
 
+		דוגמא 3:
+		177/25 בצא
+		TikId - 177/25
+		Tik_Type - בצא
+
 		ערכאה:
 		ערכאת התיק.
 		
