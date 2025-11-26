@@ -33,7 +33,7 @@ export default {
 		
 		// The file at promptUrl is saved as windows-1255, so we need to read and decode it accordingly.
 		// We'll fetch as arrayBuffer, then decode using TextDecoder.
-		const promptArrayBuffer = await (await fetch("https://www.lawdata.co.il/upload/natlantostructuredfieldsprompt/prompt.txt")).arrayBuffer();
+		const promptArrayBuffer = await (await fetch("https://www.lawdata.co.il/upload/natlantostructuredfieldsprompt/prompt.txt?dt="+new Date().getTime())).arrayBuffer();
 		const decoder = new TextDecoder('windows-1255');
 		const sPrompt = decoder.decode(new Uint8Array(promptArrayBuffer));
 
